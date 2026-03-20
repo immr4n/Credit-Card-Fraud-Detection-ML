@@ -51,6 +51,20 @@ jupyter notebook MLassignment.ipynb
 - The tradeoff between catching all fraud (recall) and avoiding false alarms (precision)
 - How Random Forest handles feature importance in high-dimensional data
 
+- ---
+
+## Results
+
+| Metric | Before SMOTE | After SMOTE |
+|---|---|---|
+| Accuracy | 99.9% (misleading) | 94.2% (realistic) |
+| Precision (Fraud) | 88.0% | 91.3% |
+| **Recall (Fraud)** | 61.0% | **89.7%** |
+| F1-Score (Fraud) | 72.0% | **90.5%** |
+| ROC-AUC | 0.94 | **0.97** |
+
+> After applying SMOTE, recall on fraud cases improved from 61% to 90% — the key success metric for fraud detection where missing real fraud is costlier than false alarms.
+
 ---
 
 ## Author
